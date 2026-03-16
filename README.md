@@ -1,73 +1,91 @@
+
 # ESBUAH (Extension Security for Browser User Against Hijackers)
+
+### c0ded by XsanLahci
 
 <p align="center">
   <img src="icon.png" alt="Alt text">
 </p>
 
-### c0ded by XsanLahci
+**ESBUAH** is a lightweight browser extension specifically designed to detect threats at the browser level, ranging from _Adware_ and _Browser Hijackers_ to _Credential Stealers_ masquerading as legitimate extensions.
 
-**ESBUAH** adalah _browser extension_ ringan yang dirancang khusus untuk mendeteksi ancaman pada tingkat browser, mulai dari _Adware_, _Browser Hijackers_, hingga _Credential Stealers_ yang menyamar sebagai ekstensi legal.
+Built on _DevSecOps_ and _Red Teaming_ principles, this tool helps users perform integrity audits of their browsing environment using heuristic permission analysis and VirusTotal API integration.
 
-Dibangun dengan prinsip _DevSecOps_ dan _Red Teaming_, alat ini membantu pengguna melakukan audit integritas terhadap lingkungan browsing mereka menggunakan analisis izin heuristik dan integrasi API VirusTotal.
+## 🚀 Key Features
 
-## 🚀 Fitur Utama
-
-1.  **Audit Extension:** Mendeteksi ekstensi yang memiliki izin terlalu luas (_high-privilege permissions_) yang sering digunakan oleh Adware.
+1.  **Audit Extension:** Detects extensions with excessively broad permissions (_high-privilege permissions_) frequently used by Adware.
     
-2.  **Stealer Check:** Modul khusus untuk memindai ekstensi yang memiliki akses ke data sensitif seperti `Cookies`, `Storage`, dan `Identity`.
+2.  **Stealer Check:** A specialized module to scan for extensions that have access to sensitive data such as `Cookies`, `Storage`, and `Identity`.
     
-3.  **VirusTotal Integration:** Melakukan pengecekan reputasi URL secara _real-time_ melalui database ancaman global VirusTotal.
+3.  **VirusTotal Integration:** Performs real-time URL reputation checks through the VirusTotal global threat database.
     
-4.  **Security Log:** Antarmuka log yang informatif untuk memantau temuan ancaman secara langsung.
+4.  **Security Log:** An informative log interface to monitor threat findings directly.
     
 
-## 📁 Struktur File
+## 📁 File Structure
 
-Untuk menjalankan alat ini, pastikan Anda menyimpan file dalam satu folder (misalnya folder `ESBUAH-Extension`) dengan struktur sebagai berikut:
+To run this tool, ensure you save the following files in a single folder (e.g., a folder named `ESBUAH-Extension`) with this structure:
 
 ```
 ESBUAH-Extension/
-├── manifest.json  (Konfigurasi Ekstensi)
-├── index.html     (Antarmuka Pengguna/UI)
-├── app.js         (Logika Utama & Engine)
-└── esbuah.png       (Ikon Ekstensi - Ukuran 48x48 pixel)
+├── manifest.json  (Extension Configuration)
+├── index.html     (User Interface/UI)
+├── app.js         (Main Logic & Engine)
+└── icon.png       (Extension Icon - 48x48 pixel size)
 
 ```
 
-## 🛠️ Cara Instalasi (Developer Mode)
+## 🛠️ Installation Guide (Developer Mode)
 
-Karena ini adalah _security tool_ kustom, Anda perlu memasangnya melalui mode pengembang di browser berbasis Chromium (Chrome, Edge, Brave, Opera):
+### 1. Chromium-Based Browsers (Chrome, Edge, Brave, Opera)
 
-1.  **Download/Clone** semua file di atas dan masukkan ke dalam satu folder.
+As ESBUAH is a custom security tool, you need to install it via developer mode:
+
+1.  **Download/Clone** all files and place them in a single folder.
     
-2.  Buka browser dan akses halaman ekstensi:
+2.  Open the extensions page in your browser:
     
-    -   Chrome: `chrome://extensions/`
+    -   **Google Chrome:** `chrome://extensions/`
         
-    -   Edge: `edge://extensions/`
+    -   **Brave Browser:** `brave://extensions/`
         
-3.  Aktifkan **Developer Mode** di pojok kanan atas.
+    -   **Microsoft Edge:** `edge://extensions/`
+        
+3.  Enable **Developer Mode** in the top-right or bottom-left corner.
     
-4.  Klik tombol **Load unpacked** (Muat yang belum dikemas).
+4.  Click the **Load unpacked** button.
     
-5.  Pilih folder tempat Anda menyimpan file **ESBUAH** tadi.
-    
-6.  Ekstensi ESBUAH akan muncul di daftar dan siap digunakan!
+5.  Select the folder where you stored the **ESBUAH** files.
     
 
-## ⚙️ Konfigurasi VirusTotal
+### 2. Mozilla Firefox
 
-Untuk menggunakan fitur _Scan URL_, Anda memerlukan API Key:
+Firefox handles unpublished extensions slightly differently:
 
-1.  Daftar akun gratis di [VirusTotal](https://www.virustotal.com/ "null").
+1.  Open Firefox and type `about:debugging` in the address bar, then press Enter.
     
-2.  Buka profil Anda dan ambil **API Key** di bagian "API Key".
+2.  Click on the **This Firefox** menu in the left-hand column.
     
-3.  Buka popup ESBUAH, masukkan key tersebut pada kolom yang tersedia. Key akan tersimpan secara otomatis di _local storage_ browser Anda.
+3.  Look for the **Temporary Extensions** section and click the **Load Temporary Add-on...** button.
+    
+4.  Navigate to your extension folder and select the `manifest.json` file.
+    
+5.  _Note: Extensions loaded temporarily in Firefox will disappear when the browser is closed. You will need to reload it when starting a new session for audit purposes._
+    
+
+## ⚙️ VirusTotal Configuration
+
+To utilize the _Scan URL_ feature, you will need an API Key:
+
+1.  Register for a free account at [VirusTotal](https://www.virustotal.com/ "null").
+    
+2.  Open your profile and retrieve your **API Key** from the "API Key" section.
+    
+3.  Open the ESBUAH popup and enter the key in the provided field. The key will be automatically saved to your browser's _local storage_.
     
 
 ## ⚠️ Disclaimer
 
-Alat ini dikembangkan untuk tujuan edukasi dan keamanan (_SecOps_). Meskipun ESBUAH dapat mendeteksi ancaman berbasis ekstensi, alat ini tidak menggantikan fungsi Antivirus/EDR di tingkat sistem operasi (OS). Selalu berhati-hati saat memberikan izin pada ekstensi pihak ketiga.
+This tool is developed for educational and security (_SecOps_) purposes. While ESBUAH can detect extension-based threats, it does not replace the function of an Antivirus/EDR at the operating system (OS) level. Always exercise caution when granting permissions to third-party extensions.
 
-**Coded with ⚡ by XsanLahci -** _ittampan.wordpress.com._
+**Coded with ⚡ by XsanLahci**
