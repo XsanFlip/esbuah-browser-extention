@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "ESBUAH - Security Extension",
+  "version": "1.0.0",
+  "description": "Extension Security for Browser User Against Hijackers, c0ded by XsanLahci. A professional sanitizer and threat detector.",
+  "permissions": [
+    "management",
+    "tabs",
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "48": "esbuah.png"
+  },
+  "host_permissions": [
+    "https://www.virustotal.com/*"
+  ]
+}
