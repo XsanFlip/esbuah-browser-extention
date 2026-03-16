@@ -4,7 +4,7 @@
 
 ### c0ded by XsanLahci
 
-**ESBUAH** adalah _browser extension_ ringan yang dirancang khusus untuk mendeteksi ancaman pada tingkat peramban, mulai dari _Adware_, _Browser Hijackers_, hingga _Credential Stealers_ yang menyamar sebagai ekstensi legal.
+**ESBUAH** adalah _browser extension_ ringan yang dirancang khusus untuk mendeteksi ancaman pada tingkat browser, mulai dari _Adware_, _Browser Hijackers_, hingga _Credential Stealers_ yang menyamar sebagai ekstensi legal.
 
 Dibangun dengan prinsip _DevSecOps_ dan _Red Teaming_, alat ini membantu pengguna melakukan audit integritas terhadap lingkungan browsing mereka menggunakan analisis izin heuristik dan integrasi API VirusTotal.
 
