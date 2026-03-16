@@ -1,5 +1,7 @@
 # ESBUAH (Extension Security for Browser User Against Hijackers)
 
+
+
 ### c0ded by XsanLahci
 
 **ESBUAH** adalah _browser extension_ ringan yang dirancang khusus untuk mendeteksi ancaman pada tingkat peramban, mulai dari _Adware_, _Browser Hijackers_, hingga _Credential Stealers_ yang menyamar sebagai ekstensi legal.
