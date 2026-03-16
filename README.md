@@ -28,7 +28,7 @@ ESBUAH-Extension/
 ├── manifest.json  (Konfigurasi Ekstensi)
 ├── index.html     (Antarmuka Pengguna/UI)
 ├── app.js         (Logika Utama & Engine)
-└── icon.png       (Ikon Ekstensi - Ukuran 48x48 pixel)
+└── esbuah.png       (Ikon Ekstensi - Ukuran 48x48 pixel)
 
 ```
 
