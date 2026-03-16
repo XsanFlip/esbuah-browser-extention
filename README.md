@@ -31,7 +31,7 @@ ESBUAH-Extension/
 ├── manifest.json  (Extension Configuration)
 ├── index.html     (User Interface/UI)
 ├── app.js         (Main Logic & Engine)
-└── icon.png       (Extension Icon - 48x48 pixel size)
+└── esbuah.png       (Extension Icon - 48x48 pixel size)
 
 ```
 
