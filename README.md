@@ -1,6 +1,6 @@
 # ESBUAH (Extension Security for Browser User Against Hijackers)
 
-
+![Alt text](icon.png)
 
 ### c0ded by XsanLahci
 
